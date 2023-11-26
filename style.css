@@ -179,3 +179,23 @@ body {
     max-width: 120px;
     height: 140px;
 }
+
+/* Message */
+
+.message {
+    background: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 150px;
+}
+
+.message p:nth-of-type(1) {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.message .quote {
+    align-self: flex-end;
+    font-size: 17px;
+    font-weight: 900;
+}
