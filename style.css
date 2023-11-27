@@ -27,7 +27,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-width:0px;
     flex-shrink: 2;
     flex: 2;
