@@ -408,6 +408,13 @@ footer .main_container {
     }
 }
 
+@media(max-width: 380px) {
+    footer {
+        padding: 10px;
+        height: 130px;
+    }
+}
+
 /* Additional */
 
 @media(max-width: 550px) {
