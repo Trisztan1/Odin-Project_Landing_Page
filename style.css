@@ -410,8 +410,13 @@ footer .main_container {
 
 @media(max-width: 380px) {
     footer {
-        padding: 10px;
+        padding: 10px 5px;
         height: 130px;
+    }
+
+    footer .main_container {
+        height: 100px;
+        padding: 5px 8px;
     }
 }
 
