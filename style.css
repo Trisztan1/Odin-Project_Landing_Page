@@ -103,11 +103,11 @@ body {
 }
 
 .container button {
-    width: 90%;
+    width: 85%;
     background: #eb8600;
     border: #eb8600;
     color: #000;
-    height: 20px;
+    height: 30px;
     transition: all 0.5s;
     border-radius: 10px;
 }
@@ -322,6 +322,10 @@ footer .main_container {
 
     .main header h1 {
         font-size: 25px;
+    }
+
+    .main button {
+        width: 100%;
     }
 
     .main .container {
