@@ -324,10 +324,6 @@ footer .main_container {
         font-size: 25px;
     }
 
-    .main button {
-        width: 100%;
-    }
-
     .main .container {
         display: flex;
         flex-direction: column;
