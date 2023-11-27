@@ -24,20 +24,46 @@ body {
     padding-right: 100px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:0px;
+    flex-shrink: 2;
+    flex: 2;
+}
+
 .logo img {
-    width: 500px;
+    max-width: 500px;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+.links_container {
+    display: flex;
+    min-width: 0px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0px;
+    flex: 1;
     gap: 1rem;
+}
+
+.navbar li {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0px;
 }
 
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -115,6 +141,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .search figure {
@@ -123,6 +151,11 @@ body {
 
 .search img{
     max-width: 100px;
+}
+
+.pinguin {
+    display: flex;
+    min-width: 0;
 }
 
 .pinguin img{
@@ -235,8 +268,150 @@ footer .main_container {
     border: #000 1px solid;
     border-radius: 4px;
     transition: all 0.5s;
+    font-weight: 600;
 }
 
 .main_container button:hover {
     background: #ebb66f;
+}
+
+@media(max-width:768px) {
+
+    /* Navbar */
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        min-width: 0px;
+        flex-shrink: 1;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+
+    /* Main */
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main header {
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .main header h1 {
+        font-size: 25px;
+    }
+
+    .main .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .main article {
+        max-width: 100%;
+    }
+
+    .pinguin {
+        display: flex;
+        min-width: 0px;
+        max-width: 200px;
+    }
+
+    .pinguin img {
+        max-width: 100%;
+    }
+
+    .search {
+        display: flex;
+        min-width: 0;
+    }
+
+    .search div input {
+        min-width: 0px;
+    }
+
+    /* Description */
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div .card {
+        max-width: 300px;
+    }
+
+    /* Message */
+
+    .message {
+        padding: 30px;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .message p:nth-of-type(1) {
+        font-size: 22px;
+    }
+    
+    .message .quote {
+        font-size: 17px;
+        font-weight: 900;
+    }
+}
+
+/* Footer */
+
+@media (max-width: 480px) {
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .main_container {
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    footer .container h2 {
+        font-size: 20px;
+    }
+
+    footer .container p {
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+
+/* Additional */
+
+@media(max-width: 550px) {
+    .links_container a {
+        font-size: 15px;
+    }
 }
