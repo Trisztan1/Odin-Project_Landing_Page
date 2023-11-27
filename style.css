@@ -285,6 +285,8 @@ footer .main_container {
         justify-content: center;
         flex-direction: column;
         padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .navbar .logo {
@@ -409,6 +411,15 @@ footer .main_container {
 }
 
 @media(max-width: 380px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 30px;
+    }
+
+    /* Footer */
+
     footer {
         padding: 10px 5px;
         height: 130px;
@@ -420,6 +431,29 @@ footer .main_container {
     }
 }
 
+@media(max-width: 320px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 30px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+    }
+
+    footer .main_container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        margin: 0 10px;
+        height: 120px;
+    }
+}
+
 /* Additional */
 
 @media(max-width: 550px) {
@@ -427,3 +461,5 @@ footer .main_container {
         font-size: 15px;
     }
 }
+
+
